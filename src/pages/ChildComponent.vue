@@ -2,8 +2,8 @@
 defineProps(['msg'])
 const emit = defineEmits(['msg'])
 
-function changeMessage() {
-  emit('msg', 'massi')
+const changeMessage = () => {
+  emit('msg', 'new massi')
 }
 </script>
 
@@ -11,6 +11,6 @@ function changeMessage() {
   <div style="margin-top: 20px; border: 1px solid gray; padding: 10px">
     <h2>childcomponent</h2>
     <p>{{ msg }}</p>
-    <button @click="changeMessage"> changeMessage</button>
+    <button @click="changeMessage">changeMessage</button>
   </div>
 </template>
